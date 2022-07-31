@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta 姓名="title" content="ScoopThemes">
+		<meta 姓名="ROBOTS" content="">
+		<meta 姓名="description" content="">
+		<meta 姓名="abstract" content="">
+
+		<title>(<ゝω·)☆ </title>
+				<!--undefine-->
+				<script src="assets/js/layer/vue.min.js"></script>
+				<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+				<!--layer-->
+				<script src="assets/js/layer/layer.js"></script>
+				<link href="assets/js/layer/theme/default/layer.css" rel="stylesheet">
+				<!-- Bootstrap -->
+				<link href="assets/css/bootstrap.css" rel="stylesheet">
+				<link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+				<!--title icon-->
+				<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+				<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+				<!-- GridJS -->
+				<script src="assets/js/gridjs.production.min.js"></script>
+				<link href="assets/css/mermaid.min.css" rel="stylesheet" />
+				<!-- simple style -->
+				<link href="assets/css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="cloud floating"> <img src="assets/img/cloud.png" alt="Scoop Themes"> </div> <div class="cloud pos1 fliped floating"> <img src="assets/img/cloud.png" alt="Scoop Themes"> </div> <div class="cloud pos2 floating"> <img src="assets/img/cloud.png" alt="Scoop Themes"> </div> <div class="cloud pos3 fliped floating"> <img src="assets/img/cloud.png" alt="Scoop Themes"> </div>
+
+		<div id="wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<h1>感谢您对群内TS3语音服务器的支持与赞助！</h1>
+						<button type="button" class="btn btn-primary donate">我要捐赠</button> &nbsp;&nbsp;&nbsp;&nbsp;
+						<button type="button" class="btn btn-primary download">下载 TeamSpeak3</button>&nbsp;&nbsp;&nbsp;&nbsp;
+						<br/>
+						<br/>
+						<div id="gridTable"></div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-lg-offset-3">
+							<!-- <p class="copyright">Powered by 1847bell</p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+	<script>
+	 		/*$(".donate").click(function() {
+ 			const heart = '我们组织TS服务器的初衷是为了让大家有更好的开黑环境，而不是忍受各种噪音和恼人的广告。感谢您的捐赠或是您想要捐赠的意愿！这对我们就是维持这个群的动力！';
+ 			const disable = '本次募集计划：108RMB(6Mo) - 204RMB(12Mo)';
+ 			const noticeOne = '接受且仅接受1元及1元倍数的捐赠款项，不满1元部分将会被狗管理(本人)私吞。扫码付款时备注姓名，本人会在最短时间内更新感谢名单并充值到群内TS账户中。';
+ 			var content = '<h3  align="center">感谢您的捐赠意愿！</h3>' +
+ 				'<p>' + disable + '</p>' +
+ 			 '<p  align="center"><br><img src="assets/img/QR.jpg" style="float: none;"/><img src="assets/img/AliQR.jpg" style="float: none;"/></p>' +
+ 				'<br>' +
+ 				'<h4 style="color: red;">【捐赠须知】：</h4>' +
+ 				'<p><span style="color: red;">* </span>' + noticeOne + '</p>' +
+ 				'<p><span style="color: red;">* </span>TS账户流水接受任意时间的公开或查看要求</p>' +
+ 				'<p><span style="color: red;">* </span>捐赠则视为同意此须知</p>';
+ 			layer.open({
+ 				type: 1,
+ 				title: '感谢您的捐赠意愿！',
+ 				skin: 'layui-layer-rim', //加上边框
+ 				area: ['600px', '680px'], //宽高
+ 				closeBtn: 1,
+ 				content: content
+ 			});
+ 		});*/
+		
+		new gridjs.Grid({
+		  columns: ["姓名", "赞助金额", "赞助日期"],
+		  pagination: {
+			  limit: 15
+		},
+		style: {
+			td: {
+				'text-align': 'center'
+			}
+		},
+		search: true,
+		language:{
+			'search':{
+				'placeholder': '🔍请输入任意字符进行查询'
+			},
+			'pagination':{
+				'previous': '上一页',
+				'next': '下一页',
+				'showing': '展示',
+				'results': () => '条',
+				'to': '到',
+				'of': '条结果，共计'
+			},
+			noRecordsFound: '你来到了没有信息的荒原',
+		},
+		  data: [
+		    {"姓名":"熊子饼干","赞助金额":"30","赞助日期":"2020-03-13"},{"姓名":"a17a18","赞助金额":"50","赞助日期":"2019-06-01"},{"姓名":"* 易斐","赞助金额":"20","赞助日期":"2019-06-01"},{"姓名":"Elzbietaebi","赞助金额":"30","赞助日期":"2019-06-01"},{"姓名":"* 帆","赞助金额":"200","赞助日期":"2019-06-01"},{"姓名":"狗贼","赞助金额":"20","赞助日期":"2019-06-01"},{"姓名":"牛二奶","赞助金额":"20","赞助日期":"2019-06-01"},{"姓名":"F0","赞助金额":"30","赞助日期":"2019-06-01"},{"姓名":"钢蛋","赞助金额":"50","赞助日期":"2019-06-01"},{"姓名":"* 桐","赞助金额":"20","赞助日期":"2019-06-01"},{"姓名":"伊藤诚","赞助金额":"10","赞助日期":"2019-06-01"},{"姓名":"CCCCCCC","赞助金额":"11","赞助日期":"2019-06-01"},{"姓名":"十四","赞助金额":"20","赞助日期":"2019-06-01"},{"姓名":"迷妹","赞助金额":"10","赞助日期":"2019-06-01"},{"姓名":"李大脑袋","赞助金额":"10","赞助日期":"2019-06-01"},{"姓名":"风霜落叶","赞助金额":"10","赞助日期":"2019-06-01"},{"姓名":"guiji","赞助金额":"5","赞助日期":"2019-06-01"},{"姓名":"腾讯","赞助金额":"20","赞助日期":"2019-06-01"},{"姓名":"Laesorach","赞助金额":"5","赞助日期":"2019-06-01"},{"姓名":"波塔斯基","赞助金额":"30","赞助日期":"2019-06-01"},{"姓名":"Azhao","赞助金额":"5","赞助日期":"2019-06-01"},{"姓名":"超队","赞助金额":"20","赞助日期":"2019-06-01"},{"姓名":"阿炸","赞助金额":"50","赞助日期":"2019-06-01"},{"姓名":"Fuze","赞助金额":"3","赞助日期":"2019-06-01"},{"姓名":"Koto","赞助金额":"20","赞助日期":"2019-06-01"},{"姓名":"肉松","赞助金额":"110","赞助日期":"2019-06-01"},{"姓名":"火球鼠","赞助金额":"20","赞助日期":"2019-06-01"},{"姓名":"WoZibILeR","赞助金额":"10","赞助日期":"2019-06-01"},{"姓名":"院长Sama","赞助金额":"40","赞助日期":"2019-06-01"},{"姓名":"ICCE","赞助金额":"20","赞助日期":"2019-06-01"},{"姓名":"李大脑袋","赞助金额":"5","赞助日期":"2018-02-04"},{"姓名":"Lowbsoft","赞助金额":"20","赞助日期":"2018-01-20"},{"姓名":"LinZiv1","赞助金额":"30","赞助日期":"2018-01-20"},{"姓名":"野人","赞助金额":"50","赞助日期":"2018-01-16"},{"姓名":"Kurisu","赞助金额":"100","赞助日期":"2018-01-16"},{"姓名":"岁岁兽与毒鸭兽","赞助金额":"20","赞助日期":"2018-01-14"},{"姓名":"超纳森·超斯达","赞助金额":"66","赞助日期":"2018-01-14"},{"姓名":"墨色","赞助金额":"20","赞助日期":"2018-01-12"},{"姓名":"KuroK0","赞助金额":"10","赞助日期":"2018-01-06"},{"姓名":"Kingke06","赞助金额":"10","赞助日期":"2017-12-31"},{"姓名":"Waaagh!与火球鼠","赞助金额":"5","赞助日期":"2017-12-30"},{"姓名":"AlexMrvica","赞助金额":"4","赞助日期":"2017-12-30"},{"姓名":"墨痕","赞助金额":"20","赞助日期":"2017-12-29"},{"姓名":"KristinaCC","赞助金额":"10","赞助日期":"2017-12-29"},{"姓名":"鸭鸭","赞助金额":"20","赞助日期":"2017-12-29"},{"姓名":"呆呆獣","赞助金额":"20","赞助日期":"2017-12-29"},{"姓名":"azuki2010","赞助金额":"30","赞助日期":"2017-12-29"},{"姓名":"Zirdgraph231","赞助金额":"1","赞助日期":"2017-12-29"},{"姓名":"太空人质","赞助金额":"10","赞助日期":"2017-12-29"},{"姓名":"冰雹","赞助金额":"15","赞助日期":"2017-12-29"},{"姓名":"KristinaCC","赞助金额":"2","赞助日期":"2017-12-29"},{"姓名":"F0","赞助金额":"24","赞助日期":"2017-12-29"},{"姓名":"鱼见千寻","赞助金额":"20","赞助日期":"2017-12-29"},{"姓名":"ICCE","赞助金额":"20","赞助日期":"2017-12-29"}
+		  ]
+		}).render(document.getElementById("gridTable"));
+		
+		
+		$(".donate").click(function() {
+        	layer.alert('账户时间充足，捐赠通道已关闭。',{
+       		title: "捐赠暂停",
+        		icon: 6,
+        		btn: '真可惜鸭'
+        	})
+        });
+
+		$(".download").click(function() {
+			layer.confirm('你想下载什么版本的TS3？', {
+				title: "选择版本",
+				btn: ['32bit', '64bit'] //按钮
+			}, function() {
+				layer.close();
+				downIframe(bit32);
+				thx();
+			}, function() {
+				layer.close();
+				downIframe(bit64);
+				thx();
+			});
+		});
+		
+		
+		$(".oldList").click(function() {
+			var a = $("<a href="+oldListImgHref+" target='_blank'>oldListImgHref</a>").get(0);
+            var e = document.createEvent('MouseEvents');
+            e.initEvent( 'click', true, true );
+            a.dispatchEvent(e);
+		});
+
+
+		function thx() {
+			layer.alert('<p>希望你会喜欢(<ゝω·)☆</p>', {
+				icon: 6,
+				title: '下载链接由ts1.cn提供',
+			})
+		}
+
+		function downIframe(url) {
+		    window.open(url);
+		}
+		
+	</script>
+
+</html>
