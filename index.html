@@ -53,9 +53,9 @@
 			</div>
 	</body>
 	<script>
-	 		/*$(".donate").click(function() {
+	 		$(".donate").click(function() {
  			const heart = '我们组织TS服务器的初衷是为了让大家有更好的开黑环境，而不是忍受各种噪音和恼人的广告。感谢您的捐赠或是您想要捐赠的意愿！这对我们就是维持这个群的动力！';
- 			const disable = '本次募集计划：108RMB(6Mo) - 204RMB(12Mo)';
+ 			const disable = '本次募集计划：214.2RMB(12Mo) - 403.2RMB(24Mo)';
  			const noticeOne = '接受且仅接受1元及1元倍数的捐赠款项，不满1元部分将会被狗管理(本人)私吞。扫码付款时备注姓名，本人会在最短时间内更新感谢名单并充值到群内TS账户中。';
  			var content = '<h3  align="center">感谢您的捐赠意愿！</h3>' +
  				'<p>' + disable + '</p>' +
@@ -73,7 +73,7 @@
  				closeBtn: 1,
  				content: content
  			});
- 		});*/
+ 		});
 		
 		new gridjs.Grid({
 		  columns: ["姓名", "赞助金额", "赞助日期"],
@@ -106,13 +106,13 @@
 		}).render(document.getElementById("gridTable"));
 		
 		
-		$(".donate").click(function() {
-        	layer.alert('账户时间充足，捐赠通道已关闭。',{
-       		title: "捐赠暂停",
-        		icon: 6,
-        		btn: '真可惜鸭'
-        	})
-        });
+		// $(".donate").click(function() {
+        // 	layer.alert('账户时间充足，捐赠通道已关闭。',{
+       	// 	title: "捐赠暂停",
+        // 		icon: 6,
+        // 		btn: '真可惜鸭'
+        // 	})
+        // });
 
 		$(".download").click(function() {
 			layer.confirm('你想下载什么版本的TS3？', {
